@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+</head>
+<script>
+    function calc1(){
+    var n1 = parseInt(document.getElementById('id1').value);
+    var n2 = parseInt(document.getElementById('id2').value);
+    var soma = n1 + n2;
+
+    document.getElementById('id3').value = soma;
+}
+</script>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    body{
+        background-color: #F49D37;
+        margin: 3% 5%;
+        text-align: center;
+        
+    }
+    #titulo{
+        color: #140F2D;
+        margin-bottom: 15px;
+        font-family: 'Kanit', sans-serif;
+    }
+    #explica{
+        font-family: 'Kanit', sans-serif;
+        color: #D72638;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    #container_principal{
+        height: 400px;
+        width: 80%;
+        margin-left: 10%;
+        background-color: #140F2D;
+        border-radius: 15px;
+
+    }
+    #conteudo{
+        padding: 5%;
+    }
+    .texto{
+        color: #F49D37;
+        font-family: 'Kanit', sans-serif;
+        padding: 10px;
+    }
+    .inp{
+        border: none;
+        background-color: #3F88C5;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .botao{
+        border: none;
+        color: #D72638;
+        font-family: 'Kanit', sans-serif;
+        font-weight: bold;
+        background-color: #F49D37;
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+
+    }
+</style>
+<body>
+    <h1 id="titulo">Teste de HTML, CSS e Javascript</h1>
+    <p id="explica">este arquivo tem como objetivo ser uma simples revisão e teste de repositório no Github</p>
+    <div id="container_principal">
+        <div id="conteudo">
+            <form>
+                <p class="texto">Insira o valor1</p>
+                <input class="inp" type="text" id="id1">
+                <p class="texto">Insira o valor2</p>
+                <input class="inp" type="text" id="id2"><br>
+                <input class="botao" type="button" onclick="calc1()" value="calcular">
+                <p class="texto">Resultado</p>
+                <input class="inp" type="text" id="id3">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
